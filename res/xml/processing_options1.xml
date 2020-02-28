@@ -74,7 +74,7 @@
 
 
 		<EditTextPreference
-			android:defaultValue="100"
+			android:defaultValue="0"
 			android:inputType="number"
 			android:key="min_fix_lock"
 			android:title="@string/procopt_min_lock_to_fix_ambiguity_title" />
@@ -110,7 +110,7 @@
 			android:title="@string/procopt_slip_threshold_title" />
 
 		<EditTextPreference
-			android:defaultValue="100"
+			android:defaultValue="30"
 			android:inputType="numberDecimal"
 			android:key="max_age"
 			android:title="@string/procopt_max_age_of_diff_s_title" />
@@ -148,7 +148,7 @@
 			android:title="@string/procopt_number_of_filter_iterations_title" />
 
 		<EditTextPreference
-			android:defaultValue="3"
+			android:defaultValue="4"
 			android:inputType="number"
 			android:key="min_fix_sats"
 			android:title="@string/procopt_min_fix_sats_title" />
@@ -160,7 +160,7 @@
 			android:title="@string/procopt_min_hold_sats_title" />
 
 		<EditTextPreference
-			android:defaultValue="12"
+			android:defaultValue="10"
 			android:inputType="number"
 			android:key="min_drop_sats"
 			android:title="@string/procopt_min_drop_sats_title" />
@@ -174,7 +174,7 @@
 			android:title="@string/procopt_rcv_stds_title" />
 
 		<EditTextPreference
-			android:defaultValue="0.004"
+			android:defaultValue="0.100"
 			android:inputType="numberDecimal"
 			android:key="max_pos_var"
 			android:title="@string/procopt_max_pos_var_ambiguity_title" />
@@ -188,7 +188,7 @@
 			android:title="@string/procopt_ar_filter_title" />
 
 		<EditTextPreference
-			android:defaultValue="0.001"
+			android:defaultValue="0.1"
 			android:inputType="numberDecimal"
 			android:key="var_hold_amb"
 			android:title="@string/procopt_var_hold_amb_title" />
@@ -224,7 +224,7 @@
 			android:title="@string/procopt_init_rst_title" />
 
 		<EditTextPreference
-			android:defaultValue="0"
+			android:defaultValue="1"
 			android:inputType="number"
 			android:key="max_ave_ep"
 			android:title="@string/procopt_max_averaging_epochs_title" />
@@ -279,6 +279,6 @@
         android:summary="@string/procopt_processing_cycle_summary"
         android:entries="@array/procopt_processing_cycle_entries"
         android:entryValues="@array/procopt_processing_cycle_entries"
-        android:defaultValue="10" />
+        android:defaultValue="1" />
 
 </PreferenceScreen>
