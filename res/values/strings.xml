@@ -181,7 +181,7 @@
     <string name="strfmt_rtcm3">RTCM 3</string>
     <string name="strfmt_oem4">NovAtel OEMV/4</string>
     <string name="strfmt_oem3">NovAtel OEMV/3</string>
-    <string name="strfmt_ubx">u-blox LEA-*T</string>
+    <string name="strfmt_ubx">u-blox</string>
     <string name="strfmt_ss2">NovAtel Superstar II</string>
     <string name="strfmt_cres">Hemisphere</string>
     <string name="strfmt_stq">SkyTraq S1315F</string>
