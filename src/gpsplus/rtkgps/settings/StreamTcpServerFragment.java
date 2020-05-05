@@ -46,7 +46,7 @@ public class StreamTcpServerFragment extends PreferenceFragment {
         }
 
         public Value setPort(int port) {
-            if (port <= 0 || port > 65535) throw new IllegalArgumentException();
+//            if (port <= 0 || port > 65535) throw new IllegalArgumentException();
             this.port = port;
             return this;
         }
@@ -58,12 +58,9 @@ public class StreamTcpServerFragment extends PreferenceFragment {
 
         @Override
         public String getPath() {
-            return SettingsHelper.encodeNtripTcpPath(
-                    null,
-                    null,
+            return SettingsHelper.encodeTcpsvrPath(
                     host,
-                    String.valueOf(port),
-                    null,
+                    String.valueOf(9000),
                     null
             );
         }
@@ -86,7 +83,7 @@ public class StreamTcpServerFragment extends PreferenceFragment {
     public StreamTcpServerFragment() {
         super();
         mPreferenceChangeListener = new PreferenceChangeListener();
-        mSharedPrefsName = StreamNtripClientFragment.class.getSimpleName();
+        mSharedPrefsName = StreamTcpServerFragment.class.getSimpleName();
     }
 
     @Override
@@ -158,13 +155,14 @@ public class StreamTcpServerFragment extends PreferenceFragment {
 
     public static Value readSettings(SharedPreferences prefs) {
         return new Value()
-                .setHost(prefs.getString(KEY_HOST, ""))
+                .setHost(prefs.getString(KEY_HOST,""))
                 .setPort(Integer.valueOf(prefs.getString(KEY_PORT, "0")))
                 ;
     }
 
     public static String readSummary(SharedPreferences prefs) {
-        return "tcp:" + readSettings(prefs).getPath();
+        Log.d("ASPARUH","tcpsvr:" + readSettings(prefs).getPath() );
+        return "tcpsvr:" + readSettings(prefs).getPath();
     }
 
 

@@ -164,7 +164,7 @@ public class StreamTcpClientFragment extends PreferenceFragment {
     }
 
     public static String readSummary(SharedPreferences prefs) {
-        return "tcp:" + readSettings(prefs).getPath();
+        return "tcpcli:" + readSettings(prefs).getPath();
     }
 
 

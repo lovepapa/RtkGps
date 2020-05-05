@@ -37,9 +37,9 @@ public class OutputSolution1Fragment extends PreferenceFragment {
 
     private final StreamType INPUT_STREAM_TYPES[] = new StreamType[] {
         StreamType.TCPCLI,
+        StreamType.TCPSVR,
         StreamType.NTRIPSVR,
-        StreamType.FILE,
-        StreamType.TCPSVR
+        StreamType.FILE
     };
 
     static final StreamType DEFAULT_STREAM_TYPE = StreamType.FILE;
@@ -180,7 +180,7 @@ public class OutputSolution1Fragment extends PreferenceFragment {
         if (needUpdate) {
             SharedPreferences.Editor e = prefs.edit();
             e.putBoolean(KEY_ENABLE, false)
-            .putString(KEY_TYPE, StreamType.NTRIPTCPSVR.name())
+            .putString(KEY_TYPE, StreamType.TCPSVR.name())
             .putString(KEY_FORMAT, StreamFormat.RTCM3.name())
             ;
             e.commit();
