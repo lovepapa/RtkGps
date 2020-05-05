@@ -515,7 +515,7 @@ public class SettingsHelper {
         StringBuilder path;
         path = new StringBuilder();
 
-        if (TextUtils.isEmpty(host)) host = "localhost";
+        if (TextUtils.isEmpty(host)) host = "127.0.0.1";
 
         path.append(host);
         if (!TextUtils.isEmpty(port)) {
