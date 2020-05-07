@@ -31,8 +31,8 @@ public class StreamTcpClientFragment extends PreferenceFragment {
         private String host;
         private int port;
 
-        public static final String DEFAULT_HOST = "127.0.0.1";
-        public static final int DEFAULT_PORT = 1020;
+        public static final String DEFAULT_HOST = "home.complement-terre.fr";
+        public static final int DEFAULT_PORT = 5015;
 
         public Value() {
             host = DEFAULT_HOST;
