@@ -1,0 +1,31 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is behind 'origin/master' by 15 commits, and can be fast-forwarded.
+#   (use "git pull" to update your local branch)
+#
+# Changes to be committed:
+#	new file:   .idea/.gitignore
+#	new file:   .idea/RtkGps.iml
+#	new file:   .idea/codeStyles/Project.xml
+#	new file:   .idea/gradle.xml
+#	new file:   .idea/misc.xml
+#	new file:   .idea/modules.xml
+#	new file:   .idea/vcs.xml
+#
+# Changes not staged for commit:
+#	modified:   .idea/RtkGps.iml
+#	modified:   .idea/gradle.xml
+#	modified:   .idea/misc.xml
+#	modified:   .idea/modules.xml
+#	modified:   .idea/vcs.xml
+#	deleted:    src/gpsplus/rtkgps/geoportail/License.java.sample
+#	modified:   src/org/osmdroid/tileprovider/modules/WMTSMapTileDownloader.java
+#
+# Untracked files:
+#	.externalNativeBuild/
+#	.idea/caches/
+#	.idea/libraries/
+#
+
