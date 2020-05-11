@@ -4,6 +4,35 @@ import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.util.Log;
 
+<<<<<<< HEAD
+=======
+import gpsplus.rtkgps.BuildConfig;
+//import gpsplus.rtkgps.geoportail.License;
+
+import cz.msebera.android.httpclient.HttpEntity;
+import cz.msebera.android.httpclient.HttpResponse;
+import cz.msebera.android.httpclient.HttpVersion;
+import cz.msebera.android.httpclient.auth.AuthScope;
+import cz.msebera.android.httpclient.auth.UsernamePasswordCredentials;
+import cz.msebera.android.httpclient.client.CredentialsProvider;
+import cz.msebera.android.httpclient.client.HttpClient;
+import cz.msebera.android.httpclient.client.methods.HttpGet;
+import cz.msebera.android.httpclient.client.methods.HttpUriRequest;
+import cz.msebera.android.httpclient.conn.ClientConnectionManager;
+import cz.msebera.android.httpclient.conn.scheme.PlainSocketFactory;
+import cz.msebera.android.httpclient.conn.scheme.Scheme;
+import cz.msebera.android.httpclient.conn.scheme.SchemeRegistry;
+import cz.msebera.android.httpclient.conn.ssl.SSLSocketFactory;
+import cz.msebera.android.httpclient.impl.client.AbstractHttpClient;
+import cz.msebera.android.httpclient.impl.client.BasicCredentialsProvider;
+import cz.msebera.android.httpclient.impl.client.DefaultHttpClient;
+import cz.msebera.android.httpclient.impl.conn.tsccm.ThreadSafeClientConnManager;
+import cz.msebera.android.httpclient.params.BasicHttpParams;
+import cz.msebera.android.httpclient.params.HttpParams;
+import cz.msebera.android.httpclient.params.HttpProtocolParams;
+import cz.msebera.android.httpclient.protocol.HTTP;
+import cz.msebera.android.httpclient.util.EntityUtils;
+>>>>>>> origin/master
 import org.osmdroid.tileprovider.BitmapPool;
 import org.osmdroid.tileprovider.MapTile;
 import org.osmdroid.tileprovider.MapTileRequestState;
@@ -211,7 +240,7 @@ public class WMTSMapTileDownloader extends MapTileModuleProviderBase {
 
                 final HttpUriRequest head = new HttpGet(tileURLString);
                 //Geoportail has a mandatory user-agent
-                head.setHeader("User-Agent", License.getUserAgent()); // TODO have tileSource dependent User-Agent
+                //head.setHeader("User-Agent", License.getUserAgent()); // TODO have tileSource dependent User-Agent
                 final HttpResponse response = httpClient.execute(head);
 
                 // Check to see if we got success
